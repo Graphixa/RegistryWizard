@@ -31,7 +31,7 @@ Install-Module -Name RegistryWizard
 **To remove registry items:**
 ```regWizard -Action Remove -File C:\path\to\config.json```
 
-**Note: Replace C:\path\to\config.json with the actual path to your JSON configuration file.**
+Note: Replace C:\path\to\config.json with the actual path to your JSON configuration file.
 
 You can also just copy the contents of the function into your own App but the powershell module exists for simply importing into your system.
 
