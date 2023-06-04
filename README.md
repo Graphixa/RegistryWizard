@@ -11,11 +11,11 @@ Registry Wizard is a PowerShell module that simplifies the management of Windows
 
 ## Install the Module
 
-You can install the Registry Wizard module from the PowerShell Gallery using the following command:
-
+You can install the Registry Wizard module from this repository using the following command:
 ```powershell
 Install-Module -Name RegistryWizard
 ```
+Alternatively, you can manually download the module from the [Releases](https://github.com/Graphixa/RegistryWizard/releases) page and import into your app manually.
 
 ## Initial Setup
 
@@ -33,7 +33,7 @@ Install-Module -Name RegistryWizard
 
 Note: Replace C:\path\to\config.json with the actual path to your JSON configuration file.
 
-You can also just copy the contents of the function into your own App but the powershell module exists for simply importing into your system.
+
 
 ## JSON Configuration Example
 
