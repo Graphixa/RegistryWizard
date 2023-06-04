@@ -25,10 +25,10 @@ Install-Module -Name RegistryWizard
 - Invoke the **regWizard** function with the appropriate parameters to add or remove registry items. 
 
 ## Usage
-**To add registry items:**
+➕ **To add registry items:**
 ```regWizard -Action Add -File C:\path\to\config.json```
 
-**To remove registry items:**
+➖ **To remove registry items:**
 ```regWizard -Action Remove -File C:\path\to\config.json```
 
 Note: Replace C:\path\to\config.json with the actual path to your JSON configuration file.
