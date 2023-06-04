@@ -18,6 +18,7 @@ Install-Module -Name RegistryWizard
 ```
 
 ## Usage
+
 - Prepare a JSON configuration file with the desired registry entries you want to add or remove. Follow the provided structure for registry entries.
 - Import the Registry Wizard module using the following command:
    ```Import-Module -Name RegistryWizard```
@@ -25,6 +26,8 @@ Install-Module -Name RegistryWizard
   - To add registry items: ```regWizard -Action Add -File C:\path\to\config.json```
   - To remove registry items: ```regWizard -Action Remove -File C:\path\to\config.json```
   Replace C:\path\to\config.json with the actual path to your JSON configuration file.
+
+You can also just copy the contents of the function into your own App but the powershell module exists for simply importing into your system.
 
 ## JSON Configuration Example
 
@@ -41,7 +44,7 @@ Here is an example of the JSON configuration file structure for adding or removi
       "type": "Dword"
     },
     {
-      "path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\CurrentVersion",
+      "path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion",
       "key": "Policies",
       "name": "DomainsAllowed",
       "value": "google.com",
@@ -54,6 +57,7 @@ Here is an example of the JSON configuration file structure for adding or removi
 ## Contributing
 Contributions to Registry Wizard are welcome! 
 If you have suggestions, improvements, or bug fixes, please submit a pull request. For major changes, please open an issue to discuss the proposed changes beforehand.
+Alternatively feel free to fork a copy and make it your own :)
 
 ## License
 This project is licensed under the MIT License.
