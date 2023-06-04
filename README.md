@@ -9,7 +9,7 @@ Registry Wizard is a PowerShell module that simplifies the management of Windows
 - **JSON Configuration:** Configure registry entries using a structured JSON format.
 - **Error Handling:** Built-in error handling for a smooth and reliable registry manipulation process.
 
-## Installation
+## Install the Module
 
 You can install the Registry Wizard module from the PowerShell Gallery using the following command:
 
@@ -25,6 +25,31 @@ Install-Module -Name RegistryWizard
   - To add registry items: ```regWizard -Action Add -File C:\path\to\config.json```
   - To remove registry items: ```regWizard -Action Remove -File C:\path\to\config.json```
   Replace C:\path\to\config.json with the actual path to your JSON configuration file.
+
+## JSON Configuration Example
+
+Here is an example of the JSON configuration file structure for adding or removing registry entries:
+
+```json
+{
+  "registryItems": [
+    {
+      "path": "HKEY_CURRENT_USER\\Software\\MyApp",
+      "key": "Settings",
+      "name": "DisableTaskPreview",
+      "value": "1",
+      "type": "Dword"
+    },
+    {
+      "path": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\CurrentVersion",
+      "key": "Policies",
+      "name": "DomainsAllowed",
+      "value": "google.com",
+      "type": "string"
+    }
+  ]
+}
+```
 
 ## Contributing
 Contributions to Registry Wizard are welcome! 
