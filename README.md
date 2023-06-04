@@ -20,11 +20,10 @@ Install-Module -Name RegistryWizard
 ## Usage
 - Prepare a JSON configuration file with the desired registry entries you want to add or remove. Follow the provided structure for registry entries.
 - Import the Registry Wizard module using the following command:
-   ```powershell
-   Import-Module -Name RegistryWizard```
+   ```Import-Module -Name RegistryWizard```
 - Invoke the **regWizard** function with the appropriate parameters to add or remove registry items. Here are some examples:
-  - To add registry items: ```powershell regWizard -Action Add -File C:\path\to\config.json```
-  - To remove registry items: ```powershell regWizard -Action Remove -File C:\path\to\config.json```
+  - To add registry items: ```regWizard -Action Add -File C:\path\to\config.json```
+  - To remove registry items: ```regWizard -Action Remove -File C:\path\to\config.json```
   Replace C:\path\to\config.json with the actual path to your JSON configuration file.
 
 ## Contributing
