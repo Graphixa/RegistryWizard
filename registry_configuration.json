@@ -1,0 +1,18 @@
+{
+    "registryItems": [
+        {
+            "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion",
+            "key": "PersonalizationCSP",
+            "name": "LockScreenImagePath",
+            "value": "C:\\Windows\\Web\\Screen\\img100.jpg",
+            "type": "String"
+        },
+        {
+            "path": "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion",
+            "key": "PersonalizationCSP",
+            "name": "LockScreenImageUrl",
+            "value": "C:\\Windows\\Web\\Screen\\img100.jpg",
+            "type": "String"
+        }
+    ]
+}
