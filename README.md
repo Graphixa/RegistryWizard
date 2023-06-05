@@ -17,6 +17,9 @@ Install-Module -Name RegistryWizard
 ```
 Alternatively, you can manually download the module from the [Releases](https://github.com/Graphixa/RegistryWizard/releases) page and import into your app manually.
 
+Note: You may need to set your execution policy to bypass or unrestricted to run this module. To do this you would use the following in a Powershell script or shell:
+```Set-ExecutionPolicy Bypass```
+
 ## Initial Setup
 
 - Prepare a JSON configuration file with the desired registry entries you want to add or remove. Follow the provided structure for registry entries.
